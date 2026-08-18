@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@500;700;900&family=Space+Grotesk:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 30% 8%;
+  --card: 220 20% 11%;
+  --secondary: 220 16% 15%;
+  --foreground: 40 20% 95%;
+  --muted: 220 16% 22%;
+  --muted-foreground: 40 10% 67%;
+  --primary: 36 92% 58%;
+  --primary-foreground: 220 30% 8%;
+  --border: 220 18% 20%;
+}
+
+* {
+  box-sizing: border-box;
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+  background: hsl(var(--background));
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: "Noto Sans TC", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.grain {
+  position: relative;
+  isolation: isolate;
+}
+
+.grain::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.75'/%3E%3C/svg%3E");
+}
+
+@keyframes marquee-x {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-marquee {
+  animation: marquee-x 32s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee { animation: none; }
+  html { scroll-behavior: auto; }
+}
