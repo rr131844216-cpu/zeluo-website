@@ -277,7 +277,7 @@ export default function HomePage() {
             <p className="font-tech text-xs uppercase tracking-[0.35em] text-primary">About</p>
             <h2 className="mt-4 font-display text-3xl font-bold leading-tight sm:text-5xl">以專業與誠信，<br />經營多元業務。</h2>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
-              澤洛科技有限公司由代表人徐子豪先生領導，設立於新北市三重區。我們以工程實務為根基，專注室內裝修、水電工程、園藝服務與門禁監視系統建置，致力成為客戶長期信賴的合作夥伴。
+              澤洛科技有限公司由代表人徐子騫先生領導，設立於新北市三重區。我們以工程實務為根基，專注室內裝修、水電工程、園藝服務與門禁監視系統建置，致力成為客戶長期信賴的合作夥伴。
             </p>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
               澤洛科技整合跨領域資源，從室內裝修、水電與泥作水泥工程，到園藝服務及門禁、監視系統建置，以扎實的執行力與嚴格的品質要求，為每一位客戶交付經得起檢驗的成果。
@@ -285,7 +285,7 @@ export default function HomePage() {
             <figure className="mt-10 border-l-2 border-primary pl-6">
               <blockquote className="font-display text-xl leading-relaxed">「多元業務的核心，是把每一件承諾都做到讓客戶安心交付。細心是我們對品質與客戶信任的承諾。」</blockquote>
               <figcaption className="mt-5">
-                <span className="text-sm"><span className="font-medium">徐子豪</span><span className="ml-2 text-muted-foreground">代表人</span></span>
+                <span className="text-sm"><span className="font-medium">徐子騫</span><span className="ml-2 text-muted-foreground">代表人</span></span>
               </figcaption>
             </figure>
           </div>
@@ -366,7 +366,7 @@ export default function HomePage() {
               </div>
 
               <div className="mt-12 flex flex-wrap items-center gap-6 border-t border-border pt-8 text-sm text-muted-foreground">
-                <span>代表人：徐子豪</span>
+                <span>代表人：徐子騫</span>
                 <span className="hidden h-4 w-px bg-border sm:block" />
                 <span>歡迎來電洽談工程需求</span>
               </div>
