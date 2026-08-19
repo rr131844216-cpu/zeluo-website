@@ -36,21 +36,24 @@ const fallbackImage = (e, remote) => {
 
 const projectCases = [
   {
-    img: imageSrc('case-interior.jpg'),
-    remote: REMOTE.caseInterior,
+    img: CASE_INTERIOR_IMG,
     tag: '室內裝修',
-    title: '空間開發與現場施工',
+    title: '空間開整與現場施工',
     desc: '現場拆除、開口與結構銜接一氣呵成，團隊親力親為掌握每一道工序，確保後續裝修與水電配置順利銜接。',
   },
   {
-    img: imageSrc('case-plumbing.jpg'),
-    remote: REMOTE.casePlumbing,
+    img: CASE_PLUMBING_IMG,
     tag: '水電工程',
     title: '給排水管路配置',
     desc: '依現場條件規劃管線走向與固定方式，施工細節清楚可驗，交付後運轉穩定，客戶安心使用。',
   },
+  {
+    img: '/images/masonry-work.jpg',
+    tag: '泥作工程',
+    title: '泥作打除與基礎施工',
+    desc: '依現場需求進行地坪打除與基礎整理，重視施工精度與現場整潔，為後續工程建立穩固基礎。',
+  },
 ];
-
 const services = [
   { icon: HardHat, title: '室內裝修', desc: '從空間規劃到現場施工，整合裝修工序與細節管理，打造兼具實用性與質感的室內環境。', items: ['空間規劃', '裝修施工', '現場管理'] },
   { icon: Wrench, title: '水電工程', desc: '提供住宅、商業空間與各類場域的水電配置、安裝與維護服務，確保設備穩定運作。', items: ['給排水工程', '電氣配線', '設備安裝'] },
