@@ -53,6 +53,12 @@ const projectCases = [
     title: '泥作打除與基礎施工',
     desc: '依現場需求進行地坪打除與基礎整理，重視施工精度與現場整潔，為後續工程建立穩固基礎。',
   },
+  {
+    img: '/images/landscape-maintenance.jpg',
+    tag: '園藝服務',
+    title: '北投植栽修剪維護',
+    desc: '依現場植栽生長狀況進行修剪與整理，維持綠化景觀整齊美觀，同時兼顧通行空間與後續養護需求。',
+},
 ];
 const services = [
   { icon: HardHat, title: '室內裝修', desc: '從空間規劃到現場施工，整合裝修工序與細節管理，打造兼具實用性與質感的室內環境。', items: ['空間規劃', '裝修施工', '現場管理'] },
