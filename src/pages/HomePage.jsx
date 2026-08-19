@@ -36,13 +36,13 @@ const fallbackImage = (e, remote) => {
 
 const projectCases = [
   {
-    img: CASE_INTERIOR_IMG,
+    img: imageSrc('case-interior.jpg'),
     tag: '室內裝修',
     title: '空間開整與現場施工',
     desc: '現場拆除、開口與結構銜接一氣呵成，團隊親力親為掌握每一道工序，確保後續裝修與水電配置順利銜接。',
   },
   {
-    img: CASE_PLUMBING_IMG,
+    img: imageSrc('case-plumbing.jpg'),
     tag: '水電工程',
     title: '給排水管路配置',
     desc: '依現場條件規劃管線走向與固定方式，施工細節清楚可驗，交付後運轉穩定，客戶安心使用。',
